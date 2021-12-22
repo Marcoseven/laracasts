@@ -1,0 +1,101 @@
+@use "bootstrap";
+
+@import "partials/_common.scss";
+@import "partials/_variables.scss";
+
+/********** 
+#site_header
+**********/
+
+#site_header {
+    background-image: linear-gradient(
+        to left,
+        $jumbo_first_background_color,
+        $jumbo_first_background_color,
+        $jumbo_second_background_color,
+        $jumbo_second_background_color,
+        $jumbo_first_background_color,
+        $jumbo_first_background_color
+    );
+}
+
+/********** 
+/#site_header
+**********/
+
+/********** 
+#site_main
+**********/
+.jumbotron {
+    background-image: linear-gradient(
+        to left,
+        $jumbo_first_background_color,
+        $jumbo_first_background_color,
+        $jumbo_second_background_color,
+        $jumbo_second_background_color,
+        $jumbo_first_background_color,
+        $jumbo_first_background_color
+    );
+    .content_jumbo {
+        display: flex;
+        align-items: center;
+        .image_jumbo img {
+            width: 100%;
+        }
+    }
+}
+
+.jumbo_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    right: 200px;
+    top: 0;
+    h1 {
+        font-size: 40px;
+        margin-bottom: 2rem;
+        .title_special {
+            background: linear-gradient(
+                to right,
+                $title_special_first_color,
+                $title_special_second_color
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    h6 {
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .buttons_jumbo {
+        display: flex;
+        button {
+            width: auto;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .button_forum{
+            background-color: $button_background_color;
+            color: white;
+        }
+    }
+}
+/********** 
+/#site_main
+**********/
+
+/********** 
+#site_footer
+**********/
+
+/********** 
+/#site_footer
+**********/
