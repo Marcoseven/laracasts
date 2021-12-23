@@ -11243,19 +11243,113 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* common_general_rules */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* /common_general_rules */
 /* colors_rules */
 /* /colors_rules */
 /********** 
 #site_header
 **********/
 #site_header {
+  padding: 1rem 0;
   background-image: linear-gradient(to left, #0241a1, #0241a1, #0b69d1, #0b69d1, #0241a1, #0241a1);
+}
+#site_header .menu {
+  height: auto;
+  display: flex;
+  padding: 1rem 3rem;
+}
+#site_header .menu #logo img {
+  color: white;
+}
+#site_header .menu #logo img:hover {
+  cursor: pointer;
+}
+#site_header .menu #nav_bar {
+  display: flex;
+  justify-content: space-around;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) {
+  padding-left: 6rem;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) #search {
+  margin-right: 5rem;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) #search a:hover {
+  color: white !important;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) #search a:hover input:hover {
+  cursor: pointer;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) #search a:hover input:hover i {
+  color: white;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) li:nth-child(2) {
+  margin-right: 2rem;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) li:nth-child(2):hover {
+  text-decoration: underline;
+  color: white;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) li:nth-child(2) a:hover {
+  color: white;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) input {
+  color: white;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) #sign_in {
+  position: relative;
+  left: 0;
+  top: 5px;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) #nav_bar_button input {
+  border: 1px solid white;
+  background-color: #0241a1;
+  padding: 0.3rem 0.6rem;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) #nav_bar_button input:hover {
+  background-color: white;
+  color: #0b69d1;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) form {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) form:hover {
+  filter: grayscale(20%);
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) form #fname {
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  background-color: #0b69d1;
+  filter: grayscale(30%);
+}
+#site_header .menu #nav_bar .col-6:nth-child(2) form i {
+  position: relative;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -70%);
 }
 
 /********** 
@@ -11264,18 +11358,18 @@ textarea.form-control-lg {
 /********** 
 #site_main
 **********/
-.jumbotron {
+#site_main .jumbotron {
   background-image: linear-gradient(to left, #0241a1, #0241a1, #0b69d1, #0b69d1, #0241a1, #0241a1);
 }
-.jumbotron .content_jumbo {
+#site_main .jumbotron .content_jumbotron {
   display: flex;
   align-items: center;
+  margin-bottom: 5rem;
 }
-.jumbotron .content_jumbo .image_jumbo img {
+#site_main .jumbotron .content_jumbotron .image_jumbotron img {
   width: 100%;
 }
-
-.jumbo_right {
+#site_main .jumbotron .jumbotron_right {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11284,23 +11378,43 @@ textarea.form-control-lg {
   right: 200px;
   top: 0;
 }
-.jumbo_right h1 {
+#site_main .jumbotron .jumbotron_right h1 {
   font-size: 40px;
+  font-weight: 700;
   margin-bottom: 2rem;
 }
-.jumbo_right h1 .title_special {
+#site_main .jumbotron .jumbotron_right h1 .title_special {
   background: linear-gradient(to right, #637bff, #26c2f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.jumbo_right h6 {
+#site_main .jumbotron .jumbotron_right h1 #dynamic_coffin {
+  height: 30px;
+  width: 10px;
+  display: inline-block;
+  padding: 0.5rem;
+  background: #26c2f7;
+  -webkit-animation: opacity 0.8s linear infinite;
+          animation: opacity 0.8s linear infinite;
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+}
+#site_main .jumbotron h6 {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
-.jumbo_right .buttons_jumbo {
+#site_main .jumbotron .buttons_jumbotron {
   display: flex;
 }
-.jumbo_right .buttons_jumbo button {
+#site_main .jumbotron .buttons_jumbotron a button {
   width: auto;
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
@@ -11308,7 +11422,11 @@ textarea.form-control-lg {
   font-weight: 600;
   font-size: 14px;
 }
-.jumbo_right .buttons_jumbo .button_forum {
+#site_main .jumbotron .buttons_jumbotron a button:nth-child(1) {
+  background-color: white;
+  color: black;
+}
+#site_main .jumbotron .buttons_jumbotron a button:nth-child(2) {
   background-color: #267edc;
   color: white;
 }
@@ -11319,6 +11437,72 @@ textarea.form-control-lg {
 /********** 
 #site_footer
 **********/
+#site_footer {
+  height: auto;
+  background-image: linear-gradient(to left, #0241a1, #0241a1, #0b69d1, #0b69d1);
+}
+#site_footer .input_email {
+  padding-top: 5rem;
+  color: white;
+}
+#site_footer .input_email input:first-child {
+  width: 100%;
+  background-color: white;
+  color: gray;
+}
+#site_footer .input_email input:last-child {
+  width: 30%;
+  height: 100%;
+  background-color: #0b69d1;
+  color: white;
+  border: none;
+  position: relative;
+  right: -168px;
+  top: -40px;
+}
+#site_footer #laracats_footer p {
+  color: white;
+  padding: 1rem 0;
+}
+#site_footer .social > ul {
+  display: flex;
+}
+#site_footer .social li {
+  padding: 0 1rem;
+}
+#site_footer .social i {
+  font-size: 25px;
+}
+#site_footer h6 {
+  color: white;
+}
+#site_footer .col-2 a {
+  color: gray;
+}
+#site_footer .col-2 a:hover {
+  color: white;
+}
+#site_footer hr {
+  color: white;
+}
+#site_footer #copyright {
+  text-align: center;
+  color: gray;
+  padding: 1rem 0;
+}
+#site_footer #copyright p {
+  margin: 0;
+}
+#site_footer #copyright p a {
+  color: gray;
+}
+#site_footer #copyright p .tuds_link:hover,
+#site_footer #copyright p .laravel_link:hover,
+#site_footer #copyright p .ocean_link:hover {
+  color: white;
+  text-decoration: underline !important;
+}
+
 /********** 
 /#site_footer
 **********/

@@ -1,17 +1,31 @@
 @extends('layouts.app')
 @section('content')
 
+<?php
+$buttons = [
+    [
+        'href' => 'series',
+        'text' => 'BROWSES COURSES',
+    ],
+    [
+        'href' => 'discussion',
+        'text' => 'DISCUSSION FORUM',
+    ],
+];
+?>
+
 <div class="jumbotron">
     <div class="container">
-        <div class="content_jumbo">
-            <div class="image_jumbo">
+        <div class="content_jumbotron">
+            <div class="image_jumbotron">
                <img src="{{ asset('img/banner-illustration-lg.webp') }}" alt="immagine sfondo Laracasts">  
             </div>
-            <div class="jumbo_right">
+            <div class="jumbotron_right">
                 <div>
                     <h1>
                         Screencasts for the <br>
                         <span class="title_special">modern.developer;</span>
+                        <span id="dynamic_coffin"></span>
                     </h1>
                 </div>
                 <div>
@@ -24,13 +38,17 @@
                         Ready to binge?
                     </h6>
                 </div>
-                <div class="buttons_jumbo">
-                    <button class="rounded-pill" type="submit" name="">BROWSE COURSES</button>
-                    <button class="rounded-pill button_forum" type="submit" name="">DISCUSSION FORUM</button>
+                <div class="buttons_jumbotron">
+                    @foreach($buttons as $item)
+                    <a href="{{ route($item['href']) }}">
+                        <button class="rounded-pill" type="submit" name="courses">
+                        {{ $item['text'] }} 
+                        </button> 
+                    </a>
+                    @endforeach 
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 @endsection
