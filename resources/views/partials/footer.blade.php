@@ -82,7 +82,7 @@ $extras_menu = [
         'href' => 'terms',
         'text' => 'Terms',
     ],
-];
+]; 
 ?>
 
 <footer id="site_footer">
@@ -106,6 +106,7 @@ $extras_menu = [
             </div>
         </div>
         <div id="laracats_footer" class="d-flex py-5">
+            <!-- .col-6 -->
             <div class="col-6">
                 <img src="{{ asset('img/negative-logo.svg') }}" alt="immagine logo Laracasts">
                 <p>
@@ -131,6 +132,9 @@ $extras_menu = [
                     </ul>
                 </div>        
             </div>
+            <!-- /.col-6 -->
+
+            <!-- .col-2 -->
             <div class="col-2">
                 <h6>LEARN</h6>
                 <div class="learn_menu">
@@ -160,7 +164,7 @@ $extras_menu = [
                 </div>
             </div>
             <div class="col-2">
-                 <h6>EXTRAS</h6>
+                <h6>EXTRAS</h6>
                 <div class="extras_menu">
                     <ul>
                         @foreach($extras_menu as $item)
@@ -173,6 +177,7 @@ $extras_menu = [
                     </ul>
                 </div>
             </div>
+            <!-- /.col-2 -->
         </div>
         <hr>
         <div id="copyright">

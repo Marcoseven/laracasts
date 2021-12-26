@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f7f8fc;
+}
+
+.container {
+    text-align: center;
+}
+
+section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

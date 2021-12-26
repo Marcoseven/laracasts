@@ -1,6 +1,5 @@
 <header id="site_header">
-    <div class="menu">
-        
+    <div class="menu">    
         <!-- #logo -->
         <div id="logo" class="col-6">
             <img src="{{ asset('img/negative-logo.svg') }}" alt="immagine logo Laracasts">
