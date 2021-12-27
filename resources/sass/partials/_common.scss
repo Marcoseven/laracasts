@@ -5,11 +5,12 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f7f8fc;
 }
 
 .container {
+    max-width: 1400px;
     text-align: center;
 }
 
@@ -17,6 +18,19 @@ section {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+}
+
+.card {
+    height: 175px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 40px !important;
+    text-align: center;
 }
 
 ul {

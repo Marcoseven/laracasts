@@ -87,8 +87,8 @@ $extras_menu = [
 
 <footer id="site_footer">
     <div class="container">
-        <div class="d-flex justify-content-center text-center py-5">
-            <div class="">
+        <div class="d-flex justify-content-center py-5">
+            <div>
                 <img src="{{ asset('img/mic-drop.svg') }}" alt="immagine artistica di un microfono">
             </div>
             <div class="input_email">
@@ -107,7 +107,7 @@ $extras_menu = [
         </div>
         <div id="laracats_footer" class="d-flex py-5">
             <!-- .col-6 -->
-            <div class="col-6">
+            <div class="col-6 text-start">
                 <img src="{{ asset('img/negative-logo.svg') }}" alt="immagine logo Laracasts">
                 <p>
                     Nine out of the doctors recommend Laracasts over competing <br>brands. Come inside, see for yourself, and massively level up <br>your development skills in the process.
@@ -134,50 +134,52 @@ $extras_menu = [
             </div>
             <!-- /.col-6 -->
 
-            <!-- .col-2 -->
-            <div class="col-2">
-                <h6>LEARN</h6>
-                <div class="learn_menu">
-                    <ul>
-                        @foreach($learn_menu as $item)
-                        <li>
-                            <a href="{{ route($item['href']) }}">
-                                {{ $item['text'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
+            <!-- .col-6 -->
+            <div id="image_footer" class="col-6">
+                <div class="col-4">
+                    <h6>LEARN</h6>
+                    <div class="learn_menu">
+                        <ul>
+                            @foreach($learn_menu as $item)
+                            <li>
+                                <a href="{{ route($item['href']) }}">
+                                    {{ $item['text'] }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h6>DISCUSS</h6>
+                    <div class="discuss_menu">
+                        <ul>
+                            @foreach($discuss_menu as $item)
+                            <li>
+                                <a href="{{ route($item['href']) }}">
+                                    {{ $item['text'] }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h6>EXTRAS</h6>
+                    <div class="extras_menu">
+                        <ul>
+                            @foreach($extras_menu as $item)
+                            <li>
+                                <a href="{{ route($item['href']) }}">
+                                    {{ $item['text'] }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-2">
-                <h6>DISCUSS</h6>
-                <div class="discuss_menu">
-                    <ul>
-                        @foreach($discuss_menu as $item)
-                        <li>
-                            <a href="{{ route($item['href']) }}">
-                                {{ $item['text'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-            <div class="col-2">
-                <h6>EXTRAS</h6>
-                <div class="extras_menu">
-                    <ul>
-                        @foreach($extras_menu as $item)
-                        <li>
-                            <a href="{{ route($item['href']) }}">
-                                {{ $item['text'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-            <!-- /.col-2 -->
+            <!-- /.col-6 -->
         </div>
         <hr>
         <div id="copyright">

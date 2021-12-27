@@ -11255,6 +11255,7 @@ body {
 }
 
 .container {
+  max-width: 1400px;
   text-align: center;
 }
 
@@ -11262,6 +11263,19 @@ section {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+}
+
+.card {
+  height: 175px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 40px !important;
+  text-align: center;
 }
 
 ul {
@@ -11477,48 +11491,36 @@ a {
 #site_main #introduction {
   height: auto;
 }
-#site_main #introduction .col-2 .card {
-  height: 175px;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border: 1px solid gray;
-  border-radius: 40px !important;
-  text-align: center;
-}
-#site_main #introduction .col-2 .card input {
+#site_main #introduction .col-2 input {
   font-size: 15px;
 }
-#site_main #introduction .col-2 .card h6 {
+#site_main #introduction .col-2 h6 {
   font-size: 15px !important;
 }
-#site_main #introduction .col-2 .card img {
+#site_main #introduction .col-2 img {
   width: 50%;
 }
-#site_main #introduction .col-2 .card .number_card {
+#site_main #introduction .col-2 .number_card {
   font-size: 25px;
   font-weight: bold;
 }
-#site_main #introduction .col-2 .card .title_card {
+#site_main #introduction .col-2 .title_card {
   font-size: 20px;
 }
-#site_main #introduction .col-2 .card #link_play:hover .button_play {
+#site_main #introduction .col-2 #link_play:hover .button_play {
   color: #0241a1;
 }
-#site_main #introduction .col-2 .card #link_play {
+#site_main #introduction .col-2 #link_play {
   padding: 0.5rem;
   background-color: #ebeef0;
   font-weight: 900;
   font-size: 20px;
   display: inline;
 }
-#site_main #introduction .col-2 .card #link_play:hover {
+#site_main #introduction .col-2 #link_play:hover {
   border: 1px solid #0241a1 !important;
 }
-#site_main #introduction .col-2 .card #link_play .button_play {
+#site_main #introduction .col-2 #link_play .button_play {
   padding: 0;
   margin: 0;
   border: none;
@@ -11572,19 +11574,19 @@ a {
   width: 75%;
 }
 #site_main #screencasts #card_frameworks {
-  background-color: #ef4662;
+  background-image: linear-gradient(#f3477f, #ec454f);
 }
 #site_main #screencasts #card_languages {
-  background-color: #f6ac27;
+  background-image: linear-gradient(#fec63b, #f19a1a);
 }
 #site_main #screencasts #card_tecniques {
-  background-color: #5090fc;
+  background-image: linear-gradient(#21c7f6, #617cfe);
 }
 #site_main #screencasts #card_testing {
-  background-color: #32b99b;
+  background-image: linear-gradient(#6ddbc3, #1aab8b);
 }
 #site_main #screencasts #card_tooling {
-  background-color: #9765dd;
+  background-image: linear-gradient(#b271bd, #8b60ec);
 }
 #site_main #screencasts .title {
   color: white;
@@ -11650,12 +11652,168 @@ a {
 #site_main #section_learn {
   height: auto;
   margin: 3rem 0;
+  background-color: #f7f8fc;
 }
-#site_main #section_learn .section_learn_title {
+#site_main #section_learn .content_learn_first {
+  margin-bottom: 1rem;
+}
+#site_main #section_learn .content_learn_first .section_learn_title {
   font-weight: 500;
 }
-#site_main #section_learn .section_learn_paragraph {
+#site_main #section_learn .content_learn_first .section_learn_paragraph {
   font-size: 20px;
+}
+#site_main #section_learn .content_learn_second {
+  display: flex;
+  justify-content: space-between;
+}
+#site_main #section_learn .content_learn_second .col-3 {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+  /* colors_rules */
+  /* /colors_rules */
+}
+#site_main #section_learn .content_learn_second .col-3 .background_violet {
+  background-image: linear-gradient(#b271bd, #8b60ec);
+}
+#site_main #section_learn .content_learn_second .col-3 .background_red {
+  background-image: linear-gradient(#f3477f, #ec454f);
+}
+#site_main #section_learn .content_learn_second .col-3 .background_blue {
+  background-image: linear-gradient(#21c7f6, #617cfe);
+}
+#site_main #section_learn .content_learn_second .col-3 .background_green {
+  background-image: linear-gradient(#6ddbc3, #1aab8b);
+}
+#site_main #section_learn .content_learn_second .col-3 .background_yellow {
+  background-image: linear-gradient(#fec63b, #f19a1a);
+}
+#site_main #section_learn .content_learn_second .col-3 .background_single_color_violet {
+  background-color: #b271bd;
+}
+#site_main #section_learn .content_learn_second .col-3 .background_single_color_red {
+  background-color: #f3477f;
+}
+#site_main #section_learn .content_learn_second .col-3 .background_single_color_blue {
+  background-color: #21c7f6;
+}
+#site_main #section_learn .content_learn_second .col-3 .background_single_color_green {
+  background-color: #6ddbc3;
+}
+#site_main #section_learn .content_learn_second .col-3 .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#site_main #section_learn .content_learn_second .col-3 .card img {
+  width: 100%;
+}
+#site_main #section_learn .content_learn_second .col-3 .card img:hover {
+  cursor: pointer;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_image {
+  width: 40%;
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: none;
+  border-bottom: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid gray;
+  margin-right: 0.5rem;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_image img {
+  width: 100%;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_image img:hover {
+  cursor: pointer;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_image .content_card_footer {
+  color: white !important;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_text {
+  width: 60%;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  border: none;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_text h3 {
+  font-size: 18px;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_text h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_text p {
+  font-size: 15px;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_text .font_size_special {
+  font-size: 14px;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_text span {
+  font-size: 12px;
+}
+#site_main #section_learn .content_learn_second .col-3 .content_card_text span img {
+  width: 15%;
+}
+#site_main #section_learn .content_learn_second .col-3 .cards {
+  height: 150px !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#site_main #section_learn .content_learn_second .col-3 .cards div:first-child {
+  margin-right: 0.5rem;
+}
+#site_main #section_learn .content_learn_second .col-3 .cards div:last-child {
+  margin-left: 0.5rem;
+}
+#site_main #section_learn .content_learn_second .col-3 .container_cards {
+  height: 150px !important;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  border-radius: 40px;
+}
+#site_main #section_learn .content_learn_second .col-3 .container_cards_major {
+  height: 320px !important;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+  border-radius: 40px;
+}
+#site_main #section_learn .content_learn_second .col-3 .container_cards_major .card_major_input input {
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  filter: grayscale(10%);
+}
+#site_main #section_learn .content_learn_second .col-3 .container_cards_major .card_major_input input:hover {
+  background-color: white !important;
+  color: black;
+}
+#site_main #section_learn .content_learn_second .col-3 .container_cards_major .card_special_footer {
+  color: white;
 }
 
 /********** 
@@ -11668,6 +11826,12 @@ a {
   height: auto;
   margin-top: 10rem;
   background-image: linear-gradient(to left, #0241a1, #0241a1, #0b69d1, #0b69d1);
+}
+#site_footer .container {
+  background-image: url("../img/footer-gang.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 #site_footer .input_email {
   padding-top: 5rem;
@@ -11707,11 +11871,15 @@ a {
 #site_footer .links_footer {
   display: flex;
 }
-#site_footer .col-2 a {
+#site_footer .col-4 a {
   color: gray;
 }
-#site_footer .col-2 a:hover {
+#site_footer .col-4 a:hover {
   color: white;
+}
+#site_footer #image_footer {
+  display: flex;
+  flex-direction: row;
 }
 #site_footer hr {
   color: white;
