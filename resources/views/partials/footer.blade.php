@@ -109,7 +109,7 @@ $extras_menu = [
             <!-- .col-6 -->
             <div class="col-6 text-start">
                 <img src="{{ asset('img/negative-logo.svg') }}" alt="immagine logo Laracasts">
-                <p>
+                <p id="footer_paragraph">
                     Nine out of the doctors recommend Laracasts over competing <br>brands. Come inside, see for yourself, and massively level up <br>your development skills in the process.
                 </p>  
                 <div class="social">

@@ -1,20 +1,36 @@
 @extends('layouts.app')
 @section('content')
 
-<!-- #jumbotron -->
+<!-- #section_jumbotron -->
 @include('partials.section_jumbotron')
-<!-- /#jumbotron -->
+<!-- /#section_jumbotron -->
 
-<!-- #introduction -->
+<!-- #section_introduction -->
 @include('partials.section_introduction')
-<!-- /#introduction -->
+<!-- /#section_introduction -->
 
-<!-- #screencasts -->
+<!-- #section_screencasts -->
 @include('partials.section_screencasts')
-<!-- /#screencasts -->
+<!-- /#section_screencasts -->
 
-<!-- #learn -->
+<!-- #section_learn -->
 @include('partials.section_learn')
-<!-- /#learn -->
+<!-- /#section_learn -->
+
+<!-- #section_explore -->
+@include('partials.section_explore')
+<!-- /#section_explore -->
+
+<!-- #section_developers -->
+@include('partials.section_developers')
+<!-- /#section_developers -->
+
+<!-- #section_plan -->
+@include('partials.section_plan')
+<!-- /#section_plan -->
+
+<!-- #section_team -->
+@include('partials.section_team')
+<!-- /#section_team -->
 
 @endsection

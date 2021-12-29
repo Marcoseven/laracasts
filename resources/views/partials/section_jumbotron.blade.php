@@ -11,7 +11,7 @@ $buttons = [
 ];
 ?>
 
-<section id="jumbotron">
+<section id="section_jumbotron">
     <div class="container">
         <div class="content_jumbotron">
             <div class="image_jumbotron">
@@ -44,7 +44,6 @@ $buttons = [
                     </a>
                     @endforeach 
                 </div>
-
             </div>
         </div>
     </div>

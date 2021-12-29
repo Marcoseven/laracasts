@@ -1,4 +1,4 @@
-<section id="introduction">
+<section id="section_introduction">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-2">
@@ -52,7 +52,6 @@
                     </div>
                 </div>      
             </div>
-
         </div>
     </div>
 </section>

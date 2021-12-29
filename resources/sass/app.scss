@@ -115,8 +115,8 @@
 **********/
 
 #site_main {
-    /* #jumbotron */
-    #jumbotron {
+    /* #section_jumbotron */
+    #section_jumbotron {
         margin-bottom: 3rem;
         background-image: linear-gradient(
             to left,
@@ -129,6 +129,7 @@
         );
         .content_jumbotron {
             display: flex;
+            flex-direction: row;
             align-items: center;
             margin-bottom: 5rem;
             .image_jumbotron img {
@@ -139,6 +140,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             color: white;
             position: relative;
             right: 200px;
@@ -204,10 +206,10 @@
             }
         }
     }
-    /* /#jumbotron */
+    /* /#section_jumbotron */
 
-    /* #introduction */
-    #introduction {
+    /* #section_introduction */
+    #section_introduction {
         height: auto;
         .col-2 {
             input {
@@ -248,10 +250,10 @@
             }
         }
     }
-    /* /#introduction */
+    /* /#section_introduction */
 
-    /* #screencasts */
-    #screencasts {
+    /* #section_screencasts */
+    #section_screencasts {
         height: auto;
         background-color: $section_background_color;
         margin-bottom: 10rem;
@@ -389,7 +391,7 @@
             }
         }
     }
-    /* /#screencasts */
+    /* /#section_screencasts */
 
     /* #section_learn */
     #section_learn {
@@ -579,6 +581,348 @@
         }
     }
     /* /#section_learn */
+
+    /* #section_explore */
+    #section_explore {
+        height: auto;
+        margin-bottom: 3rem;
+        background-color: $section_background_color;
+        .content_explore_first {
+            width: 100%;
+        }
+        .content_explore_second {
+            width: 100%;
+            position: relative;
+        }
+        .icons {
+            .content_explore_second_arrow {
+                button {
+                    border: none;
+                    background-color: white;
+                    font-size: 30px;
+                    padding: 0.2rem;
+                    filter: opacity(50%);
+                    &:hover {
+                        filter: none;
+                    }
+                }
+                .content_explore_second_arrow_left {
+                    position: absolute;
+                    left: 10px;
+                    top: 100px;
+                }
+                .content_explore_second_arrow_right {
+                    position: absolute;
+                    right: 10px;
+                    top: 100px;
+                }
+                span {
+                    color: black;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                    &:hover {
+                        background-color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .row_first,
+            .row_second,
+            .row_third {
+                width: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .card_explore {
+                height: 75px;
+                min-width: 225px !important;
+                padding: 0.5rem;
+                margin: 1rem;
+                border-radius: 10px;
+                border: 1px solid gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                &:hover {
+                    cursor: pointer;
+                }
+                .card_explore_image {
+                }
+                .card_explore_text {
+                    display: flex;
+                    flex-direction: column;
+                    .card_explore_title {
+                        font-weight: 600;
+                    }
+                    .card_explore_data {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        font-size: 12px;
+                        i {
+                            font-size: 5px;
+                            padding: 0 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* /#section_explore */
+
+    /* #section_developers */
+    #section_developers {
+        height: auto;
+        background-color: white;
+        margin-bottom: 3rem;
+        .section_developers_first {
+            margin-bottom: 3rem;
+        }
+        .section_developers_second {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 1rem;
+            .content_developers_second_left {
+                width: 100%;
+                .users {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        margin: 1rem;
+                        &:hover {
+                            cursor: pointer;
+                            border: 1px solid $jumbotron_first_background_color;
+                        }
+                    }
+                }
+                .card_developers_user {
+                    height: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    .card_developers_users_name {
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                    .button_developers button {
+                        background-color: $jumbotron_second_background_color;
+                        color: white;
+                        padding: 1rem;
+                        border: none;
+                        &:hover {
+                            filter: drop-shadow(0px 250px 20px blue)
+                                invert(105%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* /#section_developers */
+
+    /* #section_plan */
+    #section_plan {
+        height: auto;
+        margin-bottom: 3rem;
+        background-color: $section_background_color;
+        .content_section_plan_first {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                margin: 2rem 0;
+                color: gray;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .content_section_plan_second {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .container_form {
+                border: 1px solid $jumbotron_first_background_color;
+                form {
+                    .rounded-pill {
+                        padding: 0.5rem 2rem;
+                        border: none;
+                        &:first-child {
+                            background-image: linear-gradient(
+                                to right,
+                                $section_plan_button_first_border_color 0%,
+                                $section_plan_button_second_border_color 100%
+                            );
+                            color: white;
+                        }
+                        &:last-child {
+                            background-color: $section_background_color;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .row {
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 2rem 0;
+                .card_plan {
+                    height: 400px;
+                    width: 300px;
+                    padding: 1rem;
+                    margin: 0 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 20px;
+                    border: 1px solid gray;
+                    background-color: white;
+                    color: black;
+                    #button_special_card_plan {
+                        background-color: $jumbotron_first_background_color !important;
+                        color: white;
+                    }
+                    &:nth-child(2) {
+                        border: 1px solid $jumbotron_first_background_color !important;
+                    }
+                    .plan_card_header {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        &:first-child {
+                            font-weight: 600;
+                            color: $jumbotron_first_background_color !important;
+                        }
+                        &:last-child {
+                            color: $jumbotron_first_background_color !important;
+                        }
+                        .card_plan_number {
+                            font-size: 30px;
+                            color: $jumbotron_first_background_color;
+                        }
+                    }
+                    .plan_card_center_image {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                    .plan_card_center_text {
+                        text-align: center;
+                        font-weight: 500;
+                        .plan_card_word_special {
+                            font-weight: 600;
+                        }
+                    }
+                    .plan_card_footer {
+                        button {
+                            width: 100%;
+                            border: none;
+                            padding: 1rem;
+                            margin: 0.5rem;
+                            color: black;
+                            background-color: $section_background_color;
+                            &:hover {
+                                color: $jumbotron_first_background_color;
+                                border: 1px solid
+                                    $jumbotron_first_background_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* /#section_plan */
+
+    /* #section_team */
+    #section_team {
+        height: auto;
+        padding-bottom: 3rem;
+        background-color: $container_background_color;
+        .content_team_first {
+            margin-bottom: 6rem;
+        }
+        .content_team_second {
+            max-width: 1400px;
+            display: flex;
+            flex-direction: row;
+            .card_team {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+                margin: 0 0.5rem;
+                background-color: white;
+                border-radius: 20px;
+                border: 1px solid gray;
+                .card_team_header {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .card_team_image {
+                        text-align: center;
+                        position: relative;
+                        left: 0;
+                        bottom: 70px;
+                        img {
+                            width: 50%;
+                            border-radius: 50%;
+                        }
+                    }
+                    h6 {
+                        font-weight: 600;
+                        font-size: 20px;
+                        padding: 1rem 0;
+                    }
+                    p {
+                        color: gray;
+                        font-size: 18px;
+                    }
+                }
+                .card_team_center {
+                    text-align: center;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+                .card_team_footer {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    p {
+                        font-size: 20px;
+                    }
+                    span {
+                        border-radius: 50%;
+                        &:hover {
+                            cursor: pointer;
+                            filter: grayscale(50%);
+                        }
+                        i {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* /#section_team */
 }
 
 /********** 
@@ -599,78 +943,83 @@
         $jumbotron_second_background_color,
         $jumbotron_second_background_color
     );
+
     .container {
         background-image: url("../img/footer-gang.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-    }
-    .input_email {
-        padding-top: 5rem;
-        color: white;
-    }
-    .input_email input:first-child {
-        width: 100%;
-        background-color: white;
-        color: gray;
-    }
-    .input_email input:last-child {
-        width: 30%;
-        height: 100%;
-        background-color: $jumbotron_second_background_color;
-        color: white;
-        border: none;
-        position: relative;
-        right: -168px;
-        top: -40px;
-    }
-    #laracats_footer p {
-        color: white;
-        padding: 1rem 0;
-    }
-    .social > ul {
-        display: flex;
-    }
-    .social li {
-        padding: 0 1rem;
-    }
-    .social i {
-        font-size: 25px;
-    }
-
-    h6 {
-        color: white;
-    }
-    .links_footer {
-        display: flex;
-    }
-    .col-4 a {
-        color: gray;
-        &:hover {
+        .input_email input:first-child {
+            width: 100%;
+            background-color: white;
+            color: gray;
+        }
+        .input_email input:last-child {
+            width: 30%;
+            height: 100%;
+            background-color: $jumbotron_second_background_color;
+            color: white;
+            border: none;
+            position: relative;
+            right: -71%;
+            top: -40px;
+        }
+        .input_email {
+            padding-top: 5rem;
+            color: white;
+            form {
+                position: absolute;
+            }
+        }
+        #laracats_footer {
+            #footer_paragraph {
+                color: white !important;
+                padding: 1rem 0;
+            }
+            .social > ul {
+                display: flex;
+            }
+            .social li {
+                padding: 0 1rem;
+            }
+            .social i {
+                font-size: 25px;
+            }
+        }
+        #image_footer {
+            display: flex;
+            flex-direction: row;
+            .col-4 a {
+                color: gray;
+                &:hover {
+                    color: white;
+                }
+            }
+            h6 {
+                color: white;
+            }
+        }
+        .links_footer {
+            display: flex;
+        }
+        hr {
             color: white;
         }
-    }
-    #image_footer {
-        display: flex;
-        flex-direction: row;
-    }
-    hr {
-        color: white;
-    }
-    #copyright {
-        text-align: center;
-        color: gray;
-        padding: 1rem 0;
-        p {
-            margin: 0;
-            a {
-                color: gray;
-            }
-            .tuds_link:hover,
-            .laravel_link:hover,
-            .ocean_link:hover {
-                color: white;
-                text-decoration: underline !important;
+        #copyright {
+            text-align: center;
+            color: gray;
+            padding: 1rem 0;
+            p {
+                margin: 0;
+                a {
+                    color: gray;
+                }
+                .tuds_link:hover,
+                .laravel_link:hover,
+                .ocean_link:hover {
+                    color: white;
+                    text-decoration: underline !important;
+                }
             }
         }
     }

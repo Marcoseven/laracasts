@@ -1,34 +1,4 @@
-<?php
-$card_screencasts = [
-    [
-        'id' => '1',
-        'image' => 'img/frameworks-default.svg',
-        'title' => 'Frameworks',
-    ],
-    [
-        'id' => '2',
-        'image' => 'img/languages-default.svg',
-        'title' => 'Languages',
-    ],
-    [
-        'id' => '3',
-        'image' => 'img/techniques-default.svg',
-        'title' => 'Tecniques',
-    ],
-    [
-        'id' => '4',
-        'image' => 'img/testing-default.svg',
-        'title' => 'Testing',
-    ],
-    [
-        'id' => '5',
-        'image' => 'img/tooling-default.svg',
-        'title' => 'Tooling',
-    ],
-];
-?>
-
-<section id="screencasts">
+<section id="section_screencasts">
     <div class="container">
         <div class="screencasts_title">
             <h2>

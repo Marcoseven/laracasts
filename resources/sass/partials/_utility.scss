@@ -6,7 +6,13 @@
 .deactive {
     display: none !important;
 }
+
+.move_left {
+    position: relative;
+    right: -100px;
+}
+.move_right {
+    position: relative;
+    left: -100px;
+}
 /* /utility_rules */
-
-
-
