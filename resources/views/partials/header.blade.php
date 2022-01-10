@@ -9,7 +9,7 @@
         <!-- #nav_bar -->
         <nav id="nav_bar" class="row col-6">
             <div class="col-6"></div>
-            <div class="col-6 pe-0">
+            <div class="col-6">
                 <ul class="d-flex">
                     <li id="search">
                         <a href="#">

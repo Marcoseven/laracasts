@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/series', function () {
+    return view('pages.series');
+})->name('series');
+
+
 /* route_#site_header */
 /* route_.buttons_jumbotron */
 Route::get('/discussion', function () {
@@ -37,10 +42,6 @@ Route::get('/sign_up', function () {
 Route::get('/sign_in', function () {
     return view('pages.footer.learn.sign_in');
 })->name('sign_in');
-
-Route::get('/series', function () {
-    return view('pages.footer.learn.series');
-})->name('series');
 
 Route::get('/larabits', function () {
     return view('pages.footer.learn.larabits');
